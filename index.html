@@ -1,26 +1,17 @@
-<!doctype html>
+<!Doctype html>
 <html lang="en">
-
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="fonts/icomoon/style.css">
-
   <link rel="stylesheet" href="css/owl.carousel.min.css">
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  
-  
   <!-- Style -->
   <link rel="stylesheet" href="css/style.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-
+  <link rel="stylesheet" href="css/intlTelInput.css" />
+  <script src="js/intlTelInput.min.js"></script>
   <title>MyUG</title>
 </head>
 <body>
@@ -50,14 +41,19 @@
               </a>
             </form>
             <div class="alert alert-info" style="display: none"></div>
-            <button class="btn btn-block btn-outline-success" style="margin-top: 4px;">Connect for free (6pm-9pm)</button>
-            <br/>
+            <button class="btn btn-block btn-outline-success" style="margin-top: 4px;">Connect for free (6pm-9pm)</button><br/>
+            <footer>For support contact: <br/>
+               <ul>
+                <li>+256 200501700</li>
+                <li>+256 393193242</li>
+                <li>+256 700558488</li>
+               </ul>
+             </footer>
           </div>
         </div>
       </div>
     </div>
   </div>
-
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -67,7 +63,7 @@
     const phoneInput = window.intlTelInput(phoneInputField, {
       preferredCountries: ["ug", "ke", "tz", "rw"],
       utilsScript:
-        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        "js/utils.js",
     });
     const info = document.querySelector(".alert-info");
     const error = document.querySelector(".alert-error");
@@ -86,5 +82,4 @@
     }
   </script>
 </body>
-
 </html>
